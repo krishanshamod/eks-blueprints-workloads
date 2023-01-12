@@ -1,8 +1,3 @@
 labels:
   env: prod
   team: riker
-spec:
-  env:
-  ingress:
-    host: 
-    type: alb
