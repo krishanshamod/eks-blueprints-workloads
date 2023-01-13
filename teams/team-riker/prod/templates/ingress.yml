@@ -9,12 +9,18 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
 spec:
   rules:
-  - http:
+  - host: www.krishanshamod.live
+    http:
       paths:
-      - path: /nginx
+      - path: /
         pathType: Prefix
         backend:
           service:
             name: nginx-service
             port:
               name: http
+  tls:
+  - hosts:
+    - www.krishanshamod.live
+    - krishanshamod.live
+    secretName: krishanshamod-live-tls
