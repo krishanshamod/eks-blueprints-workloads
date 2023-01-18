@@ -30,7 +30,7 @@ metadata:
 spec:
   consolidation:
     enabled: true
-  ttlSecondsAfterEmpty: 60 # mutual exclusive with consolitation
+  #ttlSecondsAfterEmpty: 60 # mutual exclusive with consolitation
   ttlSecondsUntilExpired: 2592000 # 30 Days = 60 * 60 * 24 * 30 Seconds;
   requirements:
     - key: "karpenter.k8s.aws/instance-category"
